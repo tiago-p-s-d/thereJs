@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 	<title>My first three.js app</title>
+	<link rel="stylesheet" href="style.css">
 	<style>
 		body {
 			margin: 0;
@@ -13,9 +14,11 @@
 </head>
 
 <body>
-	<p>teste</p>
-	<script type="module" src="/thereJs/node_modules/three/build/three.module.js"></script>
-	<script type="module" src="./js/main.js"></script>
+	<div class="content-box">
+		<div id="canvas-container"></div>
+	</div>
+
+<script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
