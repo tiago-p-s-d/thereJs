@@ -5,20 +5,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 	<title>My first three.js app</title>
-	<link rel="stylesheet" href="style.css">
-	<style>
-		body {
-			margin: 0;
-		}
-	</style>
+	<link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-	<div class="content-box">
-		<div id="canvas-container"></div>
-	</div>
-
-<script type="module" src="./js/main.js"></script>
+	<header>
+		<img src="../img/logoif.png" alt="logo do if" class="logoif">
+	</header>
+	<center>
+		<div class="flex-container">
+			<div class="content-box">
+				<div id="canvas-container" class="canvas-container"></div>
+			</div>
+		</div>
+	</center>
+	<button onclick="createScene()">Gerar Cena</button>
+	<script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
