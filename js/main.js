@@ -1,4 +1,4 @@
-import * as THREE from './three.module.js';
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
 
 
 
@@ -34,8 +34,8 @@ window.addEventListener('resize', resizeModel);
 
 // Inicie a animação
 animate();
+y.style.display = 'none';
 
-hideCanvas()
 window.createScene = function () {
     // Crie uma cena Three.js
 
@@ -78,3 +78,22 @@ function animate() {
     cube.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
+
+
+function calcSize(){
+    let larguraTela = window.innerWidth;
+    if(larguraTela < 750){
+        document.getElementById('teste').style.display = 'none';
+    }
+    else{
+        document.getElementById('teste').style.display = 'flex';
+    }
+}
+
+window.addEventListener('load', calcSize);
+window.addEventListener('resize', calcSize);
+calcSize()
+// Chame a função para aplicar o tamanho de fonte inicial
+
+
+
